@@ -1,0 +1,135 @@
+/* Reset para evitar rolagem lateral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    text-align: center;
+}
+
+/* Cabeçalho fixo */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header h1 {
+    font-size: 24px;
+    display: inline-block;
+    color: white;
+}
+
+nav {
+    display: inline-block;
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Seções ocupando a tela inteira */
+.section, .hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+/* Hero */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 20px;
+    background: #ff416c;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* Serviços */
+.servico-box {
+    background: #222;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.servico-box i {
+    font-size: 50px;
+    color: #ff416c;
+}
+
+/* Contato */
+.contato p {
+    font-size: 18px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+}
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1ebe57;
+}
